@@ -7,9 +7,7 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { AboutComponent } from './about/about.component';
 import { ClassesComponent } from './classes/classes.component';
-import { EventsComponent } from './events/events.component';
 import { RegisterComponent } from './user/register/register.component';
-import { LoginComponent } from './login/login.component';
 import { SignInComponent } from './user/sign-in/sign-in.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HomeComponent } from './home/home.component';
@@ -21,9 +19,7 @@ import { FooterComponent } from './footer/footer.component';
     NavbarComponent,
     AboutComponent,
     ClassesComponent,
-    EventsComponent,
     RegisterComponent,
-    LoginComponent,
     SignInComponent,
     DashboardComponent,
     HomeComponent,
