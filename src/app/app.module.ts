@@ -12,6 +12,9 @@ import { SignInComponent } from './user/sign-in/sign-in.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
+import { FaqComponent } from './faq/faq.component';
+import { PolicyComponent } from './policy/policy.component';
+import { ScheduleComponent } from './schedule/schedule.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +26,10 @@ import { FooterComponent } from './footer/footer.component';
     SignInComponent,
     DashboardComponent,
     HomeComponent,
-    FooterComponent
+    FooterComponent,
+    FaqComponent,
+    PolicyComponent,
+    ScheduleComponent
   ],
   imports: [
     BrowserModule,
