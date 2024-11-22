@@ -2,37 +2,19 @@
     <div class = "title">
         FREQUENTLY ASKED QUESTIONS
     </div>
-    <div class = "fq">
-        <div class="agreement">Discipline is very important in Dance. By being part of REYNODANCE ACADEMY, I commit to following its guidelines.</div>
-        
-        <div class = "question">
-            QUESTION:
-        </div>
-        <div class = "answer">
-            Students will be accepted starting at 2 years old (boys and girls).
-            <br>Students will be placed and relocated by the instructor into their respective groups according to their age and knowledge of the subject.
-        </div>
-    </div>
 
-    <div class = "fq">
-        
-        <div class = "question">
-            QUESTION:
-        </div>
-        <div class = "answer">
-            Students will be accepted starting at 2 years old (boys and girls).
-            <br>Students will be placed and relocated by the instructor into their respective groups according to their age and knowledge of the subject.
-        </div>
-    </div>
+    <div class="agreement">Discipline is very important in Dance. By being part of REYNODANCE ACADEMY, I commit to following its guidelines.</div>
 
-    <div class = "fq">
-        
-        <div class = "question">
-            QUESTION:
+    <div class = "fq" *ngFor = "let question of questions; let i = index" >        
+        <div class = "box">
+            <div class = "question">
+                {{question.text}}
+            </div>
+            <button *ngIf = "question.pressed==false" class = "show" (click) = "buttonPressed(i)">></button>
+            <button *ngIf = "question.pressed" class = "hide" (click) = "buttonPressed(i)">></button>
         </div>
-        <div class = "answer">
-            Students will be accepted starting at 2 years old (boys and girls).
-            <br>Students will be placed and relocated by the instructor into their respective groups according to their age and knowledge of the subject.
+        <div class = "answer" *ngIf="question.pressed">
+            {{ question.answer}}
         </div>
     </div>
 </div>

@@ -4,6 +4,7 @@
   flex-direction: column;
   align-items: center;
   padding: 30px 50px 50px 50px;
+  width: 90%;
 }
 
 .title{
@@ -24,8 +25,9 @@
 }
 
 .teacherPhoto{
-  width: 50%;
+  width: 40%;
   border-radius: 100%;
+  height: 40%;
 }
 
 .teacherTitle{
@@ -34,7 +36,7 @@
   align-items: center;
   padding: 15px;
   width: 50%;
-  font-size: 18px;
+  font-size: 22px;
   text-align: center;
   color: var(--hotPink);
   font-weight: 400;
@@ -42,7 +44,7 @@
 
 .teacherPos{
   display: flex;
-  font-size: 13px;
+  font-size: 16px;
   font-style:italic;
   color: var(--black);
   font-weight: 400;
@@ -51,7 +53,7 @@
 .teacherInfo{
   display: flex;
   text-align: center;
-  font-size: 12px;
+  font-size: 14px;
   color: var(--black);
   font-weight: 300;
 }

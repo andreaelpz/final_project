@@ -4,6 +4,7 @@
     flex-direction: column;
     align-items: center;
     padding: 30px 50px 50px 50px;
+    width:90%;
   }
   
   .title{
@@ -12,4 +13,108 @@
     margin-top: 20px;
     margin-bottom: 20px;
     color: var(--hotPink);
+  }
+  
+  .generalInfo{
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 400;
+    width:100%;
+  }
+  
+  .classes{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px; 
+    align-items: left;
+    justify-content: left;
+    width:80%
+  }
+  
+  .class{
+    font-weight:600;
+    color: var(--hotPink);
+    font-size: 16px;
+  }
+  
+  .summary{
+    font-size: 14px;
+  }
+
+  .visualizer{
+    display:flex;
+    flex-direction:row;
+    width:80%;
+  }
+  
+  .graph{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .weekday{
+    width: 100%;
+    display:flex;
+    flex-direction:row;
+  }
+
+  .day{
+    text-align: center;
+    background-color: var(--hotPink);
+    color: white;
+    font-weight: 400;
+    font-size: 18px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    margin-bottom:5px;
+    display: flex;
+    align-items: center;
+    width: 20%;
+    justify-content: center;
+  }
+
+  .row{
+    background-color: white;
+    font-size: 14px;
+    padding:10px;
+    display:flex;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+
+  .schedule{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom:5px;
+  }
+
+  button{
+    margin: 15px 20px 40px 20px;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--hotPink);
+    padding: 5px;
+    color: white;
+    font-size: 14px;
+  }
+
+  .filter-buttons{
+    display: flex;
+  }
+
+  button:hover{
+    background-color: var(--black);
+  }
+
+  button.active{
+    background-color: var(--black);
+    border: 2px solid var(--hotPink);
   }

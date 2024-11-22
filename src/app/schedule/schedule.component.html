@@ -1,3 +1,33 @@
 <div class = "container">
     <div class = "title">GROUP SCHEDULES</div>
+    
+    <div class="filter-buttons">
+        <button *ngFor="let group of groups" (click)="filterSearch(group)" [class.active]="selected.includes(group)">
+          {{ group }}
+        </button>
+      </div>
+
+    <div class = "visualizer">
+        <div class = "graph">
+            <div class = "weekday" *ngFor = "let day of week">
+                <div class = "day">{{ day.day }}</div>
+                <div class = "schedule">
+                    <div class = "row" *ngFor = "let schedule of day.schedules">
+                        <div class = "type" *ngIf = "selected.includes(schedule.group)"> {{ schedule.group }}</div>
+                        <div class = "type" *ngIf = "selected.includes(schedule.group)"> {{ schedule.class }}</div>
+                        <div class = "time"  *ngIf = "selected.includes(schedule.group)"> {{ schedule.time }}</div>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </div>
+
+    <div class = "classes" *ngFor = "let group of groups">   
+        <div class = "class">
+            {{ group }}
+        </div>
+        <div class = "summary">
+            {{ groupSummaries[group] }}
+        </div>
+    </div>
 </div>
