@@ -3,8 +3,9 @@
     display:flex;
     flex-direction: column;
     align-items: center;
-    padding: 30px 50px 50px 50px;
-    width:90%;
+    width: 90%;
+    margin: 0 auto;
+    box-sizing: border-box;
   }
   
   .title{
@@ -16,9 +17,13 @@
   }
   
   .generalInfo{
-    text-align: center;
     margin-bottom: 30px;
     font-weight: 400;
+    width:100%;
+  }
+
+  .classInfo{
+    margin-top: 40px;
     width:100%;
   }
   
@@ -26,9 +31,6 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 20px; 
-    align-items: left;
-    justify-content: left;
-    width:80%
   }
   
   .class{
@@ -42,26 +44,18 @@
   }
 
   .visualizer{
-    display:flex;
-    flex-direction:row;
-    width:80%;
+    width: 100%;
   }
   
   .graph{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin-bottom: 40px;
   }
 
   .weekday{
-    width: 100%;
     display:flex;
     flex-direction:row;
   }
 
   .day{
-    text-align: center;
     background-color: var(--hotPink);
     color: white;
     font-weight: 400;
@@ -69,21 +63,20 @@
     border-bottom-left-radius: 5px;
     border-top-left-radius: 5px;
     margin-bottom:5px;
-    display: flex;
-    align-items: center;
     width: 20%;
+    display:flex;
+    align-items: center;
     justify-content: center;
   }
 
   .row{
     background-color: white;
     font-size: 14px;
-    padding:10px;
     display:flex;
     justify-content: space-between;
-    width: 100%;
     border-bottom-right-radius: 5px;
     border-top-right-radius: 5px;
+    padding: 5px;
   }
 
   .schedule{
@@ -97,24 +90,39 @@
   button{
     margin: 15px 20px 40px 20px;
     cursor: pointer;
-    width: 100%;
     border: none;
     border-radius: 5px;
-    background-color: var(--hotPink);
-    padding: 5px;
-    color: white;
-    font-size: 14px;
+    background-color: var(--lightPink);
+    padding: 10px;
+    color: var(--black);
+    font-size: 13px;
+    border: 2px solid var(--hotPink);
+    display: inline-block;
   }
 
   .filter-buttons{
     display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   button:hover{
-    background-color: var(--black);
+    background-color: var(--hotPink);
+    color: white;
   }
 
   button.active{
-    background-color: var(--black);
-    border: 2px solid var(--hotPink);
+    background-color: var(--hotPink);
+    color: white;
+  }
+
+  .clear{
+    background-color: var(--hotPink);
+    color: white;
+    border-radius:100%;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }

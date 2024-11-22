@@ -69,6 +69,7 @@ img {
   justify-content: space-around;
   align-items: center;
   width: 100%;
+  margin-top: 50px;
 }
 
 .locationTitle{
@@ -110,22 +111,24 @@ img {
 }
 
 .learnMore{
-  background-color: var(--hotPink);
+  background-color: var(--lightPink);
   padding: 8px;
   border-radius: 5px;
   border: none;
-  color: white;
+  color: black;
   font-family: 'Open Sans', sans-serif;
   font-size: 20px;
-  margin-top: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
+  border: 2px solid var(--hotPink);
 }
 
 .learnMore:hover{
-  background-color: var(--black);
+  background-color: var(--hotPink);
   font-size: 19px;
   font-weight: 400;
   cursor: pointer; 
+  color: white;
 }

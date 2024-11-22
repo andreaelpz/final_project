@@ -5,6 +5,9 @@
         <button *ngFor="let group of groups" (click)="filterSearch(group)" [class.active]="selected.includes(group)">
           {{ group }}
         </button>
+        <button class = "clear" (click) = "clearAll()">
+            X
+        </button>
       </div>
 
     <div class = "visualizer">
@@ -22,12 +25,14 @@
         </div>
     </div>
 
-    <div class = "classes" *ngFor = "let group of groups">   
-        <div class = "class">
-            {{ group }}
-        </div>
-        <div class = "summary">
-            {{ groupSummaries[group] }}
+    <div class = "classInfo">
+        <div class = "classes" *ngFor = "let group of groups">   
+            <div class = "class">
+                {{ group }}
+            </div>
+            <div class = "summary">
+                {{ groupSummaries[group] }}
+            </div>
         </div>
     </div>
 </div>

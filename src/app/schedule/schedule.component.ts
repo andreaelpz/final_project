@@ -21,6 +21,7 @@ export class ScheduleComponent {
       day: 'Monday',
       schedules: [
         {group: 'PRE-BALLET', class: 'Ballet/Latin Rhythms', time: '5:00 PM - 6:00 PM'},
+        {group: 'LITTLE BALLET', class: 'NO CLASSES TODAY!', time: '-----------------------'},
         {group: 'BALLET I', class: 'Hip-Hop', time: '5:00 PM - 6:00 PM'},
         {group: 'BALLET I', class: 'Tap', time: '6:00 PM - 7:00 PM'},
         {group: 'BALLET II', class: 'Hip-hop', time: '6:00 PM - 7:00 PM'},
@@ -33,6 +34,8 @@ export class ScheduleComponent {
       schedules: [
         {group: 'PRE-BALLET', class: 'Tap', time: '6:00 PM - 7:00 PM'},
         {group: 'LITTLE BALLET', class: 'Tap/Latin Rhythms', time: '5:00 PM - 7:00 PM'},
+        {group: 'BALLET I', class: 'NO CLASSES TODAY!', time: '-----------------------'},
+        {group: 'BALLET II', class: 'NO CLASSES TODAY!', time: '-----------------------'},
         {group: 'ELITE TEEN', class: 'Jazz', time: '7:00 PM - 8:30 PM'}
       ]
     },
@@ -51,6 +54,7 @@ export class ScheduleComponent {
     {
       day: 'Thursday',
       schedules: [
+        {group: 'PRE-BALLET', class: 'NO CLASSES TODAY!', time: '-----------------------'},
         {group: 'LITTLE BALLET', class: 'Ballet', time: '5:00 PM - 6:00 PM'},
         {group: 'BALLET I', class: 'Ballet', time: '5:00 PM - 6:00 PM'},
         {group: 'BALLET II', class: 'Tap', time: '6:00 PM - 7:00 PM'},
@@ -61,12 +65,18 @@ export class ScheduleComponent {
     {
       day: 'Friday',
       schedules: [
-        {group: '', class: 'NO CLASSES TODAY!', time: ''},
+        {group: 'PRE-BALLET', class: 'NO CLASSES TODAY!', time: '-----------------------'},
+        {group: 'LITTLE BALLET', class: 'NO CLASSES TODAY!', time: '-----------------------'},
+        {group: 'BALLET I', class: 'NO CLASSES TODAY!', time: '-----------------------'},
+        {group: 'BALLET II', class: 'NO CLASSES TODAY!', time: '-----------------------'},
+        {group: 'ELITE TEEN', class: 'NO CLASSES TODAY!', time: '-----------------------'}
       ]
     },
     {
       day: 'Saturday',
       schedules: [
+        {group: 'PRE-BALLET', class: 'NO CLASSES TODAY!', time: '-----------------------'},
+        {group: 'LITTLE BALLET', class: 'NO CLASSES TODAY!', time: '-----------------------'},
         {group: 'BALLET I', class: 'Aerial Silks', time: '12:00 PM - 1:00 PM'},
         {group: 'BALLET II', class: 'Aerial Silks', time: '1:00 PM - 2:00 PM'},
         {group: 'ELITE TEEN', class: 'Aerial Silks', time: '1:00 PM - 2:00 PM'}
@@ -81,8 +91,15 @@ export class ScheduleComponent {
         this.selected = [];
       }
 
+      if(this.selected.includes(group)){
+        this.selected
+      }
       this.selected.push(group);
+      //  if button is active then remove it from array
     }
-
+    
+    clearAll(): void{
+      this.selected = this.groups;
+    }
 
 }
