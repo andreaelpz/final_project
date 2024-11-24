@@ -15,6 +15,12 @@
     margin-bottom: 20px;
     color: var(--hotPink);
   }
+
+  .below{
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 25px;
+  }
   
   .generalInfo{
     margin-bottom: 30px;
@@ -46,9 +52,6 @@
   .visualizer{
     width: 100%;
   }
-  
-  .graph{
-  }
 
   .weekday{
     display:flex;
@@ -70,7 +73,6 @@
   }
 
   .row{
-    background-color: white;
     font-size: 14px;
     display:flex;
     justify-content: space-between;
@@ -85,6 +87,8 @@
     flex-direction: column;
     width: 100%;
     margin-bottom:5px;
+    background-color: white;
+    border-radius: 5PX;;
   }
 
   button{

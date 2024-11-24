@@ -92,14 +92,18 @@ export class ScheduleComponent {
       }
 
       if(this.selected.includes(group)){
-        this.selected
+        this.selected = this.selected.filter(item => item !== group);
       }
-      this.selected.push(group);
-      //  if button is active then remove it from array
+      else{
+        this.selected.push(group);
+      }
     }
     
     clearAll(): void{
-      this.selected = this.groups;
+      this.selected = [];
     }
 
+    refresh(): void{
+      this.selected = this.groups;
+    }
 }
