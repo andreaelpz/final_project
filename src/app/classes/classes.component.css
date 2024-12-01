@@ -2,7 +2,6 @@
   color: black;
   display:flex;
   flex-direction: column;
-  align-items: center;
   padding: 30px 50px 50px 50px;
   width: 80%;
   margin: 0 auto;
@@ -14,6 +13,9 @@
   margin-top: 20px;
   margin-bottom: 20px;
   color: var(--hotPink);
+  display:flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .generalInfo{
@@ -24,10 +26,6 @@
 }
 
 .classes{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: left;
   margin-bottom: 20px;
 }
 

@@ -29,8 +29,9 @@
   }
 
   .classInfo{
-    margin-top: 40px;
+    margin-top: 15px;
     width:100%;
+    margin-bottom: 40px;
   }
   
   .classes{
@@ -51,6 +52,7 @@
 
   .visualizer{
     width: 100%;
+    margin-bottom: 40px;
   }
 
   .weekday{
